@@ -1,0 +1,130 @@
+/* JAVASCRIPT QUIZ CHALLENGE STYLESHEET*/
+
+/*CLASS STYLES*/
+
+
+body{
+    overflow: auto;
+}
+h1{
+   padding: 0;
+   margin: 0;
+}
+
+
+h2{
+	margin: 0;
+	padding: 20px 0;
+	color: whitesmoke;
+	font-size: 30px;
+	box-sizing: border-box;
+}
+
+
+label{
+	background-color: limegreen;
+	padding: 15px 22px;
+	border-radius: 50%;
+	border: solid 3px white;
+}
+
+
+.question-button-container{
+	overflow: hidden;
+	
+}
+
+.wrapper{
+	background-image:linear-gradient(black , transparent , black),
+		             url(paper.jpg);
+	background-size: cover;
+}
+
+.answer-input{
+	margin: 10px;
+	padding: 20px 60px;
+	min-width: 50%;
+	max-width: 50%;
+	border-radius: 5px;
+	border-bottom: solid 5px grey;
+}
+
+.answer-input:hover{
+	border-bottom: solid 5px limegreen;
+}
+
+.answer-input:focus{
+	background-color: limegreen;
+	border-bottom: solid 5px white;
+	color: white;
+}
+
+.answer-input:active{
+	background-color: lightgreen;
+}
+/* END OF CLASS*/
+
+
+
+
+/*ID STYLES*/
+
+#cover{
+	width: 70%;
+	margin: auto;
+	text-align: center;
+	min-height: 80vh;
+}
+
+
+
+#main-header{
+	background-color: rgb(80 ,80, 80);
+	text-align: center;
+	padding: 5px 0;
+	color: white;
+}
+
+#main-footer{
+	background-color: darkgray;
+	text-align: center;
+	padding: 5px 0;
+}
+
+#fields{
+	border: none;
+}
+
+
+#reset-button,
+#next-button,
+#back-button{
+	float: right;
+	padding: 10px 20px;
+	margin: 15px;
+	border-radius: 5px;
+	background-color: limegreen;
+	color: white;
+	border: solid 3px white;
+	box-shadow: 5px 5px 10px black;
+}
+
+#reset-button{
+	float: left;
+}
+
+#reset-button:hover,
+#next-button:hover,
+#back-button:hover{
+	transform: scale(1.05);
+}
+
+/*END OF IDS*/
+
+
+@media (max-width:650px){
+    .answer-input{
+        font-size: .5em;
+        text-align: none;
+    } 
+}
